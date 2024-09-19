@@ -2,6 +2,7 @@ package net.pronob.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.pronob.tutorialmod.block.ModBlocks;
 import net.pronob.tutorialmod.item.ModItem;
 import net.pronob.tutorialmod.item.ModItemGroups;
 import org.slf4j.Logger;
@@ -14,6 +15,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
 		ModItem.registerModItem();
 	}

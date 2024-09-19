@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.pronob.tutorialmod.TutorialMod;
+import net.pronob.tutorialmod.block.ModBlocks;
 
 public class ModItemGroups {
 
@@ -18,6 +19,8 @@ public class ModItemGroups {
                         entries.add(ModItem.Ruby);
                         entries.add(ModItem.Raw_Ruby);
                         entries.add(Items.DIAMOND);
+                        entries.add(ModBlocks.Ruby_Block);
+                        entries.add(ModBlocks.Cute_Block);
                     }).build());
 
     public static void registerItemGroups() {
